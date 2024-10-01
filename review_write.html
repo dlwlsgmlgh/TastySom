@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>Review</title>
+        <style> 
+            .parent {
+                text-align: center;
+                line-height: 30px;
+                margin: 0 auto;
+            }
+
+            form {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;
+            }
+
+            fieldset {
+                width: 65%; /* fieldset 너비를 조정 */
+                background-color: skyblue;
+                margin: 30px auto;
+                padding: 30px;
+                border: none;
+                border-radius: 8px;
+            }
+
+            h1 {
+                margin-bottom: 40px;
+            }
+
+            h4 {
+                margin-bottom: 20px;
+            }
+
+            h5 {
+                margin-bottom: 20px;
+            }
+
+            .write-review {
+                display: flex;
+                flex-direction: column; /* 수직 정렬로 변경 */
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
+            .write-review label {
+                width: 100%; /* label 너비를 100%로 설정 */
+                text-align: left; /* 텍스트는 왼쪽 정렬 */
+                margin-bottom: 10px; /* label과 input 사이의 간격을 위해 여백 추가 */
+                color: black;
+            }
+
+            select, textarea {
+                width: 100%; /* 입력 필드 및 select 요소의 너비를 100%로 조정 */
+                padding: 10px;
+                border: none;
+                border-radius: 5px;
+            }
+
+            textarea {
+                height: 150px; /* textarea 크기 조정 */
+                resize: vertical; /* 사용자가 크기를 조절할 수 있도록 허용 */
+            }
+
+            input[type="button"] {
+                padding: 10px 20px;
+                border: none;
+                border-radius: 5px;
+                background-color: pink;
+                color: black;
+                cursor: pointer;
+            }
+
+            input[type="button"]:hover {
+                background-color: pink;
+            }
+
+            hr {
+                margin: 40px 0;
+            }
+
+            /* placeholder 스타일을 옅은 회색으로 설정 */
+            ::placeholder {
+                color: lightgray;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="parent">
+            <h1>
+                <hr>
+                <span style="color:skyblue">TastySom</span>
+                <span style="color:black">리뷰작성</span>
+                <hr>
+            </h1>
+            <form action="">
+                <fieldset>
+                    <h4>
+                        <div class="write-review">
+                            <label for="restaurant">식당</label>
+                            <select name="restaurant" id="restaurant">
+                                <option value="restaurant1">식당1</option>
+                                <option value="restaurant2">식당2</option>
+                                <option value="restaurant3">식당3</option>
+                            </select>
+                        </div>
+                        <div class="write-review">
+                            <label for="review_point">별점을 남겨주세요!</label>
+                            <select name="point" id="point"> 
+                                <option value="1">★☆☆☆☆</option>
+                                <option value="2">★★☆☆☆</option>
+                                <option value="3">★★★☆☆</option>
+                                <option value="4">★★★★☆</option>
+                                <option value="5">★★★★★</option>
+                            </select>
+                        </div>
+                        <div class="write-review">
+                            <label for="review_text">후기를 남겨주세요!</label>
+                            <textarea id="review_text" placeholder="맛, 메뉴, 분위기에 대해서 적어주세요"></textarea>
+                        </div>
+                    </h4>
+                    <input type="button" name="login" value="확인">
+                </fieldset>
+            </form>
+
+            <p>
+                <hr>
+                <hr>
+            </p>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>Login</title>
+        <style> 
+            .parent {
+                text-align: center;
+                line-height: 30px;
+                margin: 0 auto;
+            }
+
+            form {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;
+            }
+
+            fieldset {
+                width: 60%;
+                background-color: skyblue;
+                margin: 30px auto;
+                padding: 30px;
+                border: none;
+                border-radius: 8px;
+            }
+
+            h1 {
+                margin-bottom: 40px;
+            }
+
+            h4 {
+                margin-bottom: 20px;
+            }
+
+            h5 {
+                margin-bottom: 20px;
+            }
+
+            .input-group {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
+            .input-group label {
+                width: 100px; /* 고정 너비로 정렬을 맞춤 */
+                text-align: right;
+                margin-right: 10px;
+                color: black;
+            }
+
+            .input-group input {
+                width: 80%;
+                padding: 10px;
+                border: none;
+                border-radius: 5px;
+            }
+
+            input[type="button"] {
+                padding: 10px 20px;
+                border: none;
+                border-radius: 5px;
+                background-color:pink;
+                color: black;
+                cursor: pointer;
+            }
+
+            input[type="button"]:hover {
+                background-color: pink;
+            }
+
+            .centered-buttons {
+                display: flex;
+                justify-content: center;
+                gap: 10px;
+                margin-top: 20px;
+            }
+
+            hr {
+                margin: 40px 0;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="parent">
+            <h1>
+                <hr>
+                <span style="color:skyblue">TastySom</span>
+                <span style="color:black">로그인</span>
+                <hr>
+            </h1>
+
+            <form action="">
+                <fieldset>
+                    <h4>
+                        <div class="input-group">
+                            <label for="user_id">ID</label>
+                            <input type="text" id="user_id">
+                        </div>
+                        <div class="input-group">
+                            <label for="user_password">PASSWORD</label>
+                            <input type="password" id="user_password">
+                        </div>
+                    </h4>
+                    <input type="button" name="login" value="확인">
+                </fieldset>
+            </form>
+
+            <p>
+                <hr>
+                <h5>회원 가입하시겠습니까?</h5>
+                <div class="centered-buttons">
+                    <input type="button" name="dongduk_student" value="동덕 학생">
+                    <input type="button" name="owner" value="식당 대표">
+                </div>
+                <hr>
+            </p>
+        </div>
+    </body>
+</html>
